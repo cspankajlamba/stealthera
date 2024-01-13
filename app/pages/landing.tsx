@@ -70,7 +70,7 @@ export default function Landing() {
                 <div className={style.h3}>track your sleep and get ai coaching for better recovery of your health with stealthera app seamlessly!.</div>
             </li>
             <li className={style.subSec}>
-                <div className={style.h2}>don't let anyone losing their lives!</div>
+                <div className={style.h2}>do not let anyone losing their lives!</div>
                 <div className={style.h3}>stealthera smart band will give your nearby medical services and your emergency contacts about your crash or fall.</div>
             </li>
         </section>
