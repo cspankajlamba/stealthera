@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import style from '@/app/styles/pages.module.css';
-import Watch from '@/app/images/watch.png';
-import WatchFeatures from '@/app/images/watch-features.svg';
-import Icon1 from '@/app/images/icons/icon1.png';
-import Icon2 from '@/app/images/icons/icon2.png';
-import Icon3 from '@/app/images/icons/icon3.png';
-import Icon4 from '@/app/images/icons/icon4.png';
+import style from '../styles/pages.module.css';
+import Watch from '../images/watch.png';
+import WatchFeatures from '../images/watch-features.svg';
+import Icon1 from '../images/icons/icon1.png';
+import Icon2 from '../images/icons/icon2.png';
+import Icon3 from '../images/icons/icon3.png';
+import Icon4 from '../images/icons/icon4.png';
 
 
 
