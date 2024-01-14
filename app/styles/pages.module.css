@@ -1,15 +1,8 @@
-.featureSec:root {
-    --color1: #6A32D9;
-    --color2: #0CA2FF;
-    --color3: #484848;
-    --color4: #fff;
-}
-
 .heroSec {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin: 5rem 0 10rem 0 ;
+    margin: 5rem 0 10rem 0;
     height: 50dvh;
     /* background-color: blueviolet; */
     justify-content: space-between;
@@ -95,7 +88,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         .card {
             border: 1px solid #d9d9d932;
@@ -103,8 +96,9 @@
             border-radius: .5rem;
             padding: 1.5rem;
             display: flex;
+            flex: 1/2;
             gap: 1rem;
-            width: 47%;
+            width: auto;
 
             .h4 {
                 font-size: 1rem;
@@ -120,7 +114,7 @@
     margin-bottom: 5rem;
     text-transform: uppercase;
 
-    .h2{
+    .h2 {
         font-size: 1.2rem;
         font-weight: 600;
     }
@@ -137,40 +131,108 @@
     }
 }
 
-.ctaSec{
-    display: flex;justify-content: center;align-items: center;
+.ctaSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 15vh;
     width: 100%;
     text-transform: uppercase;
     margin: 5rem 0;
-    .card{
-        display: flex;flex-direction: column;
+
+    .card {
+        display: flex;
+        flex-direction: column;
         border-radius: .5rem;
-        background: var(--color2);padding: 6rem;
+        background: var(--color2);
+        padding: 6rem;
         gap: 3rem;
         align-items: center;
         width: 50%;
-        .h2{
+
+        .h2 {
             font-size: 1.2rem;
             font-weight: 600;
         }
-        .btn{
+
+        .btn {
             border: .1rem solid #fff;
             padding: .5rem 1rem;
             border-radius: .5rem;
             transition: .3s all ease-in-out;
         }
-        .btn:hover{
+
+        .btn:hover {
             scale: 1.2;
         }
     }
 }
 
+@media (max-width: 640px) {
 
-@media (max-width: 858px) {
     .heroSec {
         flex-direction: column-reverse;
         height: fit-content;
+        gap: 5rem;
+
+        .subSec {
+            padding: 0;
+        }
+
+        .subSec:last-child {
+            justify-content: center;
+            /* height: calc(100% - 10rem); */
+        }
+
+        .subSec:first-child {
+            .h1 {
+                font-size: 2rem;
+            }
+        }
     }
 
+    .featureSec {
+        margin: 20rem 0 0 0;
+    
+        & .h1 {
+            margin-bottom: -30rem;
+            text-transform: capitalize;
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: var(--color2);
+        }
+    }
+
+    .bFeatureSec{
+        margin: 10rem 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .subSec{
+        flex: 1;
+        }
+        .subSec:first-child{
+            justify-content: center;
+            .h3{
+                padding: 0;
+            }
+        .subSec:last-child{width: 100%;display: flex;
+            & .card{
+                /* width: 100%; */
+                flex: 1;
+            }
+        }
+        }
+    }
+
+    .textFeature{
+        margin-bottom: 10rem;
+    }
+
+    .ctaSec{
+        .card {
+            width: 100%;
+        }
+    }
 }

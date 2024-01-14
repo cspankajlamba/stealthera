@@ -14,6 +14,8 @@ html{
     background: #000;
     color: #fff;
 }
+
+/* Website Header Starts Here */
 .header {
     width: 100%;
     z-index: 999;
@@ -33,6 +35,7 @@ html{
     }
 }
 
+/* Header--Navigation */
 nav {
     /* background: #fff; */
     height: 80px;
@@ -41,6 +44,7 @@ nav {
     align-items: center;
 }
 
+/* Header--Navigation--logo */
 nav .logo {
     color: var(--color4);
     font-size: 1.5rem;
@@ -112,10 +116,12 @@ nav ul li a {
     display: none;
 }
 
-
+/* WEbsite Main Content Area Starts Here */
 .main {
     padding: 3rem;
     display: flex;
+    max-width: 100%;
+    overflow: hidden;
     margin-top: 5rem;
     flex-direction: column;
     justify-content: flex-start;
@@ -123,61 +129,114 @@ nav ul li a {
     /* align-items: center; */
 }
 
+/* Website Footer Area Starts here */
 .footer {
     width: 100%;
     padding: 1rem;
     border-top: .07rem solid #ddd;
     box-shadow: 0 -1px 15px rgba(0, 0, 0, 0.034);
+    text-align: center;
 }
 
 
 
-
-
-
 /*--------------------*/
-/* Smaller Screens width Styling Start */
-@media (max-width: 858px) {
-    label.logo {
-        font-size: 1.5rem;
-        padding-left: 50px;
-    }
+/* Smaller Screens width Styling Starts */
 
-    nav ul li a {
-        font-size: 16px;
-    }
 
-    .checkbtn {
-        display: block;
-        transition: all .35s ease-in-out;
-        stroke: var(--color3);
-    }
+/* For Tablet View */
+/* @media screen and (min-device-width: 768px) 
+	and (max-device-width: 1024px) {
+        label.logo {
+            font-size: 1.5rem;
+            padding-left: 50px;
+        }
+    
+        nav ul li a {
+            font-size: 16px;
+        }
+    
+        .checkbtn {
+            display: block;
+            transition: all .35s ease-in-out;
+            stroke: var(--color3);
+        }
+    
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 5rem;
+            transition: all .35s ease-in-out;
+            padding-top: 2rem;
+            left: -100%;
+            text-align: center;
+            z-index: 999;
+        }
+    
+        nav ul li {
+            display: block;
+            margin: auto;
+            line-height: 50px;
+        }
+    
+        nav ul li a {
+            color: #1F284F;
+            font-size: 20px;
+        }
+    
+        #check:checked~ul {
+            left: 0;
+            background: #fff;
+        }
+} */
 
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 5rem;
-        transition: all .35s ease-in-out;
-        padding-top: 2rem;
-        left: -100%;
-        text-align: center;
-        z-index: 999;
-    }
 
-    nav ul li {
-        display: block;
-        margin: auto;
-        line-height: 50px;
-    }
-
-    nav ul li a {
-        color: #1F284F;
-        font-size: 20px;
-    }
-
-    #check:checked~ul {
-        left: 0;
-        background: #fff;
-    }
+/* For Mobile Phones Portrait or Landscape View */
+@media (max-width: 640px) {
+        .main{
+            margin-top: 0;
+        }
+        label.logo {
+            font-size: 1.5rem;
+            padding-left: 50px;
+        }
+    
+        nav ul li a {
+            font-size: 16px;
+        }
+    
+        .checkbtn {
+            display: block;
+            transition: all .35s ease-in-out;
+            stroke: var(--color3);
+        }
+    
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 5rem;
+            transition: all .35s ease-in-out;
+            padding-top: 2rem;
+            left: -100%;
+            text-align: center;
+            z-index: 999;
+        }
+    
+        nav ul li {
+            display: block;
+            margin: auto;
+            line-height: 50px;
+        }
+    
+        nav ul li a {
+            color: #1F284F;
+            font-size: 20px;
+        }
+    
+        #check:checked~ul {
+            left: 0;
+            background: #fff;
+        }
 }

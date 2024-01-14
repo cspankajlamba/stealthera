@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import style from '../styles/pages.module.css';
-import Watch from '../images/watch.png';
+import Watch from '../images/watchnew.svg';
 import WatchFeatures from '../images/watch-features.svg';
 import Icon1 from '../images/icons/icon1.png';
 import Icon2 from '../images/icons/icon2.png';
@@ -13,11 +13,11 @@ export default function Landing() {
     return <>
         <section className={style.heroSec}>
             <div className={style.subSec}>
-                <h1 className={style.h1}>the ultimate <br />smart <br />wearable</h1>
+                <h1 className={style.h1}>the ultimate <br />smart wearable</h1>
                 <h3 className={style.h3}>join the future of <span className={style.span}>smart wearable</span> technology is here!</h3>
             </div>
             <div className={style.subSec}>
-                <Image src={Watch} alt='' style={{ width: 'auto', height: 'auto' }} />
+                <Image className={style.img} src={Watch} alt='' style={{ width: 'auto', height: 'auto' }} />
             </div>
         </section>
         <section className={style.featureSec}>
