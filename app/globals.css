@@ -213,7 +213,8 @@ nav ul li a {
 
             h1 {
                 font-size: 4rem;
-                font-weight: bold;
+                font-weight: 800;
+                color: var(--color2);
 
                 span {
                     font-size: 5rem;
