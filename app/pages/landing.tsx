@@ -19,7 +19,7 @@ export default function Landing() {
                 <Image src={Watch} alt='' style={{ width: 'auto', height: 'auto' }} />
             </div>
         </section>
-        <section className='featureSec flex-column flex-center gap2'>
+        {/* <section className='featureSec flex-column flex-center gap2'>
             <h1>your ai health coach</h1>
             <div className="subSec flex-center">
             <Image src={WatchFeatures} alt='' style={{ width: '60%', height: 'auto'}} />
@@ -80,6 +80,6 @@ export default function Landing() {
                 <h2>want to try smart band</h2>
                 <a href='/contact' className='btn'>CONTACT US</a>
             </div>
-        </section>
+        </section> */}
     </>
 }
