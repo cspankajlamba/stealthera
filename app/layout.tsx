@@ -6,8 +6,8 @@ import Footer from './components/footer'
 
 
 export const metadata: Metadata = {
-  title: 'Healer Ai App',
-  description: 'Health Fitness App',
+  title: 'StealthEra',
+  description: 'Health & Wellness App',
 }
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
