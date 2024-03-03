@@ -1,6 +1,6 @@
 import React from "react";
 
-const Items = ['Home', 'About'];
+const Items = ['Home'];
 
 export default function MenuItems() {
     const listItems = Items.map(item =>{
@@ -13,6 +13,6 @@ export default function MenuItems() {
     });
     return <ul>
         {listItems}
-        <li><a className='btn' href='/contact'>Contact Us</a></li>
+        <li><a className='btn' href='/contact'>subscribe now</a></li>
     </ul>
 }

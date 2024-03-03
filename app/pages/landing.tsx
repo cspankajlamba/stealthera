@@ -5,20 +5,29 @@ import Icon1 from '../images/icons/icon1.png';
 import Icon2 from '../images/icons/icon2.png';
 import Icon3 from '../images/icons/icon3.png';
 import Icon4 from '../images/icons/icon4.png';
+import { normalize } from 'path';
+import Link from 'next/link';
 
 
 
 export default function Landing() {
     return <>
-        <section className="heroSec flex-center gap2 flex-space-between p3">
+        <section className="heroSec flex-center gap2 flex-space-between px-3 py-0">
             <div className="subSec flex-column gap2">
                 <h1>the <br /><span>ultimate</span> <br />smart wearable</h1>
-                <h3>join the future of <span>smart wearable</span> technology is here!</h3>
+                <h3 style={{ color: '#0CA2FF', }}>be informed, be protected, be empowered</h3>
+                <h3>join the future of smart wearable technology is here!</h3>
+                <div className="btn p-2 px-8 font-semibold" style={{ width: 'fit-content', borderRadius: '8px' }}><Link href={'/contact'}>Subscribe</Link></div>
             </div>
             <div className='subSec flex'>
-                <Image src={Watch} alt='' style={{ width: 'auto', height: 'auto' }} />
+                <div className="comingSoon flex flex-col uppercase font-bold absolute text-[#5050508d] gap-12 -rotate-90" style={{ zIndex: 0 }}>
+                    <a style={{color: '#fff'}}>Coming Soon</a>
+                    <a>Coming Soon</a>
+                    <a style={{color: '#fff'}}>Coming Soon</a>
+                </div>
+                <Image src={Watch} alt='' style={{ width: 'auto', height: 'auto', zIndex: 1 }} />
             </div>
-        </section>
+        </section >
         {/* <section className='featureSec flex-column flex-center gap2'>
             <h1>your ai health coach</h1>
             <div className="subSec flex-center">

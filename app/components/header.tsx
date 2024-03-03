@@ -1,7 +1,9 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import MainMenu from './menuItems';
+import Logo from '../images/logos/logo.png';
 import '../globals.css';
 
 const Header = () => {
@@ -71,7 +73,7 @@ const Header = () => {
         )}
       </label>
       {/* href={isHome ? null : '/'} */}
-      <label className="logo"><Link href='/'>Stealth<span>ERA</span></Link></label>
+      <label className="logo flex gap-2 items-center"><Image src={Logo} alt='' style={{ width: '45px', height: '45px' }} /><Link href='/'>Stealth<span>ERA</span></Link></label>
       <MainMenu />
     </nav>
   );

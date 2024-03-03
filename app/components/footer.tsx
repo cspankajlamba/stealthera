@@ -1,5 +1,5 @@
 export default function Footer(){
     return <>
-    <p>&copy;STEALTHERA 2023. ALL RIGHTS RESERVED.</p>
+    <p>&copy;StealthEra 2023. All Rights Reserved.</p>
     </>
 }
