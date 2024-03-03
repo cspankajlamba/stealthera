@@ -120,22 +120,22 @@ nav ul li a {
 
 /* WEbsite Main Content Area Starts Here */
 .main {
-    padding: auto 3rem;
+    padding:8rem 3rem;
     display: flex;
     max-width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 3rem;
     flex-direction: column;
     justify-content: flex-start;
-    height: calc(40dvw - 50px);
+    /* height: calc(40dvw - 50px); */
 }
 
 /* Website Footer Area Starts here */
 .footer {
     width: 100%;
     padding: 1rem;
-    position: sticky;
-    bottom: 0;
+    /* position: sticky;
+    bottom: 0; */
     border-top: .07rem solid #ddd;
     box-shadow: 0 -1px 15px rgba(0, 0, 0, 0.034);
     text-align: center;
@@ -149,9 +149,41 @@ nav ul li a {
 
 
 /* For Mobile Phones Portrait or Landscape View */
+@media (max-width: 1080px){
+    .main{
+        padding: 3rem;
+    }
+    .comingSoon{
+        font-size: 4rem;
+        gap: 4rem;
+        font-weight:bolder;
+    }
+    .heroSec {
+        .subSec {
+    
+            &:first-child {
+    
+                h1 {
+                    font-size: 1rem;    
+                    & span {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+
+    .comingSoon{
+        font-size: 2rem;
+        gap: 3rem;
+    }
+}
 @media (max-width: 640px) {
     .comingSoon{
         font-size: 2.5rem;
+        gap: 3rem;
         font-weight:bolder;
     }
     .main {
