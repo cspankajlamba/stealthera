@@ -14,9 +14,9 @@ export default function Landing() {
     return <>
         <div className="max-w-[85rem] mx-auto px-12 sm:px-6 lg:px-8 h-screen grid md:grid-cols-2 gap-12 md:gap-8 xl:gap-20 md:items-center">
             <div>
-                <p className="mt-12 text-lg text-gray-800 dark:text-gray-400">The Ultimate Smart Wearable</p>
-                <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Join the future of smart wearable technology <span className="text-[#6A32D9]">is here!</span></h1>
-                <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">be informed, be protected, be empowered</p>
+                <p className="mt-12 text-lg text-white dark:text-white">The Ultimate Smart Wearable</p>
+                <h1 className="block text-3xl font-bold text-white sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Join the future of smart wearable technology <span className="text-[#6A32D9]">is here!</span></h1>
+                <p className="mt-3 text-lg text-white dark:text-white">be informed, be protected, be empowered</p>
 
                 {/* <!-- Buttons --> */}
                 <div className="mt-7 grid gap-3 w-full sm:inline-flex">
