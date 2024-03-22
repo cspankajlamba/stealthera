@@ -12,9 +12,9 @@ import Link from 'next/link';
 
 export default function Landing() {
     return <>
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 h-screen grid md:grid-cols-2 gap-12 md:gap-8 xl:gap-20 md:items-center">
+        <div className="max-w-[85rem] mx-auto px-12 sm:px-6 lg:px-8 h-screen grid md:grid-cols-2 gap-12 md:gap-8 xl:gap-20 md:items-center">
             <div>
-                <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">The Ultimate Smart Wearable</p>
+                <p className="mt-12 text-lg text-gray-800 dark:text-gray-400">The Ultimate Smart Wearable</p>
                 <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Join the future of smart wearable technology <span className="text-[#6A32D9]">is here!</span></h1>
                 <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">be informed, be protected, be empowered</p>
 
@@ -30,7 +30,7 @@ export default function Landing() {
                 </div>
                 {/* <!-- End Buttons --> */}
             </div>
-            <div className="relative ms-4 py-16">
+            <div className="relative ms-4 py-16 md:px-12">
                 <Image className="w-100 rounded-md" src={Watch} alt="Image Description" />
                 <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"></div>
             </div>
