@@ -29,6 +29,7 @@ export default function Landing() {
                     </a>
                 </div>
                 {/* <!-- End Buttons --> */}
+                
             </div>
             <div className="relative ms-4 py-16 md:px-12">
                 <Image className="w-100 rounded-md" src={Watch} alt="Image Description" />
