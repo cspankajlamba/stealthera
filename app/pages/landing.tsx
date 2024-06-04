@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import Watch from '../images/watchnew.svg';
-import WatchFeatures from '../images/watch-features.svg';
-import Icon1 from '../images/icons/icon1.png';
-import Icon2 from '../images/icons/icon2.png';
-import Icon3 from '../images/icons/icon3.png';
-import Icon4 from '../images/icons/icon4.png';
+// import Watch from '../images/band.jpg';
+// import WatchFeatures from '../images/watch-features.svg';
+// import Icon1 from '../images/icons/icon1.png';
+// import Icon2 from '../images/icons/icon2.png';
+// import Icon3 from '../images/icons/icon3.png';
+// import Icon4 from '../images/icons/icon4.png';
 import { normalize } from 'path';
 import Link from 'next/link';
 
@@ -32,7 +32,7 @@ export default function Landing() {
                 
             </div>
             <div className="relative ms-4 py-16 md:px-12">
-                <Image className="w-100 rounded-md" src={Watch} alt="Image Description" />
+                <img className="w-100 rounded-md" src='/band.jpg' alt="Image Description" />
                 <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"></div>
             </div>
         </div>
