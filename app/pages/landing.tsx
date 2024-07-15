@@ -15,7 +15,7 @@ export default function Landing() {
         <div className="max-w-[85rem] mx-auto px-12 sm:px-6 lg:px-8 h-screen grid md:grid-cols-2 gap-12 md:gap-8 xl:gap-20 md:items-center">
             <div>
                 <p className="mt-12 text-lg text-white dark:text-white">Join the future of</p>
-                <h1 className="block text-3xl font-bold sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white text-[#6A32D9]">The Ultimate Smart Wearable smart wearable technology is here!</h1>
+                <h1 className="block text-3xl font-black sm:text-4xl lg:text-6xl lg:leading-tight text-[#6A32D9]">The Ultimate Smart Wearable smart wearable technology is here!</h1>
                 <p className="mt-3 text-lg text-white dark:text-white italic">be informed, be protected, be empowered</p>
 
                 {/* <!-- Buttons --> */}
